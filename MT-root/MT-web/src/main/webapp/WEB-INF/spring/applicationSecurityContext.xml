@@ -12,11 +12,13 @@
 			access="permitAll" />
 		<security:intercept-url pattern="/home"
 			access="permitAll" />
-		<security:intercept-url pattern="/welcome"
-			access="ROLE_USER" />
-		<security:intercept-url pattern="/login"
+		<!-- <security:intercept-url pattern="/welcome"
+			access="ROLE_USER"/>
+ -->		<security:intercept-url pattern="/login"
 			access="permitAll" />
 		<security:intercept-url pattern="/signup"
+			access="permitAll" />
+		<security:intercept-url pattern="/login-failed"
 			access="permitAll" />
 		<security:form-login login-page="/login"
 			default-target-url="/welcome"
@@ -29,6 +31,7 @@
 			<security:user-service>
 				<security:user name="abc" password="123"
 					authorities="ROLE_USER" />
+					<security:user name="def" password="333" authorities="ROLE_ADMIN"/>
 			</security:user-service>
 		</security:authentication-provider>
 	</security:authentication-manager>

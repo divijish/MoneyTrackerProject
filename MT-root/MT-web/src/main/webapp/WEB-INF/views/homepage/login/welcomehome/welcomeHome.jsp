@@ -10,5 +10,9 @@
 
 <h1>Welcome Home!</h1>
 
+<form action="logout">
+<input type="submit" value="Logout">
+</form>
+
 </body>
 </html>
