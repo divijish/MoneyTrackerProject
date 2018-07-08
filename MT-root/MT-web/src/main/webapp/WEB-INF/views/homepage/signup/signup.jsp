@@ -9,6 +9,8 @@
 <body>
 Please signup.
 <br>
-<a href="http://localhost:8081/MT-web/home">Home</a>
+<form action="home" method="get">Home
+<input type="submit" value="Submit" name="submit">
+</form>
 </body>
 </html>
